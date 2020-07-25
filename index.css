@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,  
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
 a, abbr, acronym, address, big, cite, code,  
@@ -19,15 +20,23 @@ font: inherit;
 vertical-align: baseline;  
 }
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section 
+
+{
     display: block;
 }
+
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color: royalblue;
 }
+h1 {
+    font-size: 50px;
+}
+
 nav {
     display:flex;
     align-items: flex-end;
@@ -35,15 +44,107 @@ nav {
     color: black;
     width: 100%;
 }
+
 .thegallery {
- align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.thegallery2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ }
 
 .nameheader {
   display: flex;
+  align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
+  font-size: 50px;
 }
+
 .myprojectbtn {
     display: flex;
     justify-content: center;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 500px){
+    h1 {
+      text-align: center;
+      width: 100%;
+    }
+    
+    nav{  
+     display: flex;
+     flex-direction: column;
+     margin-left: -45%;
+    }
+    
+    .btn1, .btn2, .btn3, .btn4 {
+        width: 15%;
+    }
+    .nameheader {
+        text-align: center;
+        width: 100%;
+    }
+    .myprojectbtn {
+        margin-left: -5%;
+    }
+    .thegallery {
+        display: flex;
+        flex-wrap: wrap;
+      
+    }
+    .thegallery2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 800px){
+
+h1 {
+      text-align: center;
+      width: 100%;
+    }
+    
+    nav{  
+     display: flex;
+     flex-direction: column;
+     margin-left: -45%;
+    }
+    
+    .btn1, .btn2, .btn3, .btn4 {
+        width: 15%;
+    }
+    .nameheader {
+        text-align: center;
+        width: 100%;
+    }
+    .myprojectbtn {
+        margin-left: -5%;
+    }
+    .thegallery {
+        display: flex;
+        flex-wrap: wrap;
+      
+    }
+    .thegallery2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
